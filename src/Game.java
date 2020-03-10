@@ -1,8 +1,10 @@
+import java.util.ArrayList;
+
 public class Game {
     private int numOfTurns = 0;
-    private String[] players;
+    private ArrayList<String> players;
 
-    public Game(String[] players){
+    public Game(ArrayList<String> players){
         this.players = players;
     }
 
@@ -15,7 +17,7 @@ public class Game {
         for(String p : players){
             result += p + " ";
         }
-        return result;
+        return result + "\nRound Number: "+numOfTurns;
     }
 
 }

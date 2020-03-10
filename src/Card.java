@@ -34,6 +34,6 @@ public class Card implements Comparable {
     }
 
     public String toString() {
-        return "Rank: " + rank + ", Suit: " + suit;
+        return   rank  + suit + " ";
     }
 }
