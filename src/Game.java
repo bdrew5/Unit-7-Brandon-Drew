@@ -11,7 +11,7 @@ public class Game {
     }
 
     public String toString(){
-        String result ="Game: \n";
+        String result ="Players: \n";
         for(String p : players){
             result += p + " ";
         }
