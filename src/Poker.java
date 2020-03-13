@@ -41,8 +41,6 @@ public class Poker extends CardGame {
         }
         else
             result+="No Cards Have Been Dealt";
-        if(cardTurned.size() == 0)
-
         return result;
     }
 
@@ -54,9 +52,6 @@ public class Poker extends CardGame {
             hand.add(playerNum -1, folded);
             hand.add(playerNum + numPlayers - 1, folded);
         }
-    }
-    public void river(){
-
     }
 
     public static void main(String[] args){
