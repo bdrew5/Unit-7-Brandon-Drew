@@ -1,0 +1,15 @@
+@startuml
+
+abstract class Vegetable{
+String name
+String getName()
+}
+interface Growable
+class Radishes
+class Carrot
+
+Growable <|-- Vegetable
+Vegetable <|-- Carrot
+Vegetable <|-- Radishes
+
+@enduml

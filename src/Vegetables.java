@@ -7,6 +7,9 @@ public abstract class Vegetables implements Growable {
         this.name = name;
         this.type = type;
     }
+    public String toString(){
+        return type + " " + name + "\n" + instructions;
+    }
     public String getName(){
         return name;
     }
@@ -23,7 +26,16 @@ public abstract class Vegetables implements Growable {
     public String getType() {
         return type;
     }
-    public String feed()
-    public String water()
-    public String harvest()
+
+    public String feed(){
+        return name + " fed";
+    }
+
+    public String water(){
+        return name + " watered";
+    }
+
+    public String harvest(){
+        return name + " harvested";
+    }
 }
